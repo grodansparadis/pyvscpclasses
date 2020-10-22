@@ -3,13 +3,11 @@
 # setup.py that excludes installing the "tests" package
 
 import sys
-sys.path.append('../')
-from vscp import *
+sys.path.append('../pyvscpclasses')
+import vscp_class
 
 def test_success():
-    h1 = pyvscphlp_newSession()
-    if (0 == h1 ):
-        pyvscphlp_closeSession(h1)
+    print(vscp_class.VSCP_CLASS1_MEASUREMENT)
     assert True
 
 if __name__ == "__main__":
