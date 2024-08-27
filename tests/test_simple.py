@@ -4,7 +4,7 @@
 
 import sys
 sys.path.append('../pyvscpclasses')
-import vscp_class
+import vscp-class
 
 def test_success():
     print(vscp_class.VSCP_CLASS1_MEASUREMENT)
